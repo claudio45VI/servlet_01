@@ -7,6 +7,21 @@
 		<title>Registrazione</title>
 	</head>
 	<body>
-		Registrazione utente
+	
+		<h2>Registrazione doPost</h2>
+		<form action="registrazione" method="post">
+			<div>
+				<label>Nome</label>
+				<input type="text" name="nome">
+			</div>
+			<div>
+				<label>E-mail</label>
+				<input type="email" name="email">
+			</div>
+			<button type="submit">Invia</button>
+		</form>
+		
+		
+		<!-- Registrazione utente -->
 	</body>
 </html>
