@@ -29,10 +29,10 @@ public class RegistrazioneServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		
-		String nomePost = request.getParameter("nome");
-		request.setAttribute("contengoNomePost", nomePost);
-		String emailPost = request.getParameter("email");
-		request.setAttribute("contengoEmailPost", emailPost);
+		String nomeGet = request.getParameter("nome");
+		request.setAttribute("contengoNomeGet", nomeGet);
+		String emailGet = request.getParameter("email");
+		request.setAttribute("contengoEmailGet", emailGet);
 		request.getRequestDispatcher("/riepilogo.jsp").forward(request, response);
 	}
 

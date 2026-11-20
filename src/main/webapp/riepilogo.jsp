@@ -7,6 +7,10 @@
 		<title>Riepilogo</title>
 	</head>
 	<body>
-	
+		<p>${contengoNomeGet}</p>
+		<p>${contengoEmailGet}</p>
+		
+		<p>${contengoNomePost}</p>
+		<p>${contengoEmailPost}</p>
 	</body>
 </html>
