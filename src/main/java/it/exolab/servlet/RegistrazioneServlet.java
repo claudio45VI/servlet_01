@@ -36,6 +36,11 @@ public class RegistrazioneServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
+		
+		String nomePost = request.getParameter("nome");
+		request.setAttribute("contengoNomePost", nomePost);
+		String emailPost = request.getParameter("email");
+		request.setAttribute("contengoEmailPost", emailPost);
 	}
 
 }
