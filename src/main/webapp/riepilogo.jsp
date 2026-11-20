@@ -7,10 +7,25 @@
 		<title>Riepilogo</title>
 	</head>
 	<body>
-		<p>${contengoNomeGet}</p>
-		<p>${contengoEmailGet}</p>
+		<h4>Expression Language</h4>
 		
-		<p>${contengoNomePost}</p>
-		<p>${contengoEmailPost}</p>
+		<p>Nome: ${contengoNomeGet}</p>
+		<p>E-mail: ${contengoEmailGet}</p>
+		
+		<p>Nome: ${contengoNomePost}</p>
+		<p>E-mail: ${contengoEmailPost}</p>
+		
+		
+		
+		<h4>Scriptlet</h4>
+		<% String nomeGet = (String) request.getAttribute("contengoNomeGet"); %>
+		<% String emailGet = (String) request.getAttribute("contengoEmailGet"); %>
+		<p>Nome: <%= nomeGet %></p>
+		<p>Email: <%= emailGet %></p>
+		
+		<% String nomePost = (String) request.getAttribute("contengoNomePost"); %>
+		<% String emailPost = (String) request.getAttribute("contengoEmailPost"); %>
+		<p>Nome: <%= nomePost %></p>
+		<p>Email: <%= emailPost %></p>
 	</body>
 </html>
