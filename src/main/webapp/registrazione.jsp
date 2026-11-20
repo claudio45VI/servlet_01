@@ -21,6 +21,18 @@
 			<button type="submit">Invia</button>
 		</form>
 		
+		<h2>Registrazione doGet</h2>
+		<form action="registrazione" method="get">
+			<div>
+				<label>Nome</label>
+				<input type="text" name="nome">
+			</div>
+			<div>
+				<label>E-mail</label>
+				<input type="email" name="email">
+			</div>
+			<button type="submit">Invia</button>
+		</form>
 		
 		<!-- Registrazione utente -->
 	</body>
