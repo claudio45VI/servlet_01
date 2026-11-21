@@ -27,5 +27,7 @@
 		<% String emailPost = (String) request.getAttribute("contengoEmailPost"); %>
 		<p>Nome: <%= nomePost %></p>
 		<p>Email: <%= emailPost %></p>
+		
+		<a href="registrazione.jsp">Torna alla pagina di registrazione</a>
 	</body>
 </html>
