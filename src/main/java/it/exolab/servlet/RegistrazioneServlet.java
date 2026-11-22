@@ -7,6 +7,9 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+import it.exolab.dao.UtenteDao;
+import it.exolab.model.Utente;
+
 /**
  * Servlet implementation class RegistrazioneServlet
  */
@@ -47,6 +50,14 @@ public class RegistrazioneServlet extends HttpServlet {
 		request.setAttribute("contengoNomePost", nomePost);
 		String emailPost = request.getParameter("email");
 		request.setAttribute("contengoEmailPost", emailPost);
+		
+		Utente utente1 = new Utente();
+		utente1.setNome(nomePost);
+		utente1.setEmail(emailPost);
+		
+		UtenteDao dao = new UtenteDao();
+		dao.insert(utente1);  
+		
 		request.getRequestDispatcher("/riepilogo.jsp").forward(request, response);
 	}
 
